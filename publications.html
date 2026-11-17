@@ -76,6 +76,15 @@ a:focus-visible,button:focus-visible{outline:3px solid #8aabef;outline-offset:3p
 @media(max-width:760px){.home-page main{min-height:unset;display:block}.home-page .hero{padding:60px 0 86px}.home-page .hero-grid{grid-template-columns:1fr}.page-main{min-height:unset}.page-main .section{padding-top:74px;padding-bottom:86px}.page-main .portrait-panel{min-height:300px}.page-main .research-img{aspect-ratio:auto}.page-main .gallery-image{aspect-ratio:1.04}}
 @media(max-width:490px){.home-page .hero{padding-top:44px}.home-page .hero-grid{gap:34px}.page-main .section-header h2{font-size:37px}.page-main .research-img{aspect-ratio:1.65}.page-main .gallery-image{aspect-ratio:1.04}}
 
+
+/* Full author lists & corresponding-author markers */
+.page-main .publication{padding-top:29px;padding-bottom:29px;align-items:start}
+.page-main .pub-authors{font-size:12.4px;line-height:1.9;color:#5b6b88;margin-bottom:12px;word-break:normal}
+.author-self{color:#2d4478;font-weight:850}
+.author-symbol{font-size:10px;font-weight:850;color:#3d5082;margin-left:1px;vertical-align:super}
+.page-main .pub-title{line-height:1.5}
+.page-main .pub-toolbar-note{font-size:11px;line-height:1.65;max-width:310px;text-align:right;color:#4e6082}
+@media(max-width:760px){.page-main .pub-toolbar-note{text-align:left;max-width:unset}.page-main .pub-authors{font-size:12.2px}}
 </style></head><body class="inner-page"><svg aria-hidden="true" class="screen-reader" xmlns="http://www.w3.org/2000/svg"><symbol id="i-arrow" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-diag" viewbox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-left" viewbox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></symbol><symbol id="i-right" viewbox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></symbol><symbol id="i-expand" viewbox="0 0 24 24"><path d="M8 4H4v4M16 4h4v4M4 16v4h4m12-4v4h-4" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-close" viewbox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></symbol></svg><header class="site-header">
 <div class="container header-inner">
 <a aria-label="Haechan Park homepage" class="brand" href="index.html"><span><span class="brand-text">HAECHAN PARK</span><span class="brand-small">Ph.D. · Soft Electronics Researcher</span></span></a>
@@ -86,10 +95,10 @@ a:focus-visible,button:focus-visible{outline:3px solid #8aabef;outline-offset:3p
 <nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav"><a href="index.html">Home</a><a href="haechan-park.html">Haechan Park</a><a href="research-interests.html">Research Interests</a><a aria-current="page" href="publications.html">Publications</a><a href="life.html">Life</a><a href="mailto:phc0304@unist.ac.kr">Contact</a></nav>
 </header><main class="page-main" id="main-content"><section aria-labelledby="publicationsTitle" class="section soft-section" id="publications">
 <div class="container">
-<div class="section-header reveal"><div><div class="eyebrow">03 / Selected works</div><h2 id="publicationsTitle">Publications<span style="color:#9caed8">.</span></h2></div><p>Selected peer-reviewed papers spanning sustainable electronics, soft interfaces, and wearable devices.</p></div>
-<div class="pub-toolbar reveal"><div aria-label="Filter publications" class="filter-buttons" role="group"><button aria-pressed="true" class="filter-btn active" data-filter="all" type="button">All publications</button><button aria-pressed="false" class="filter-btn" data-filter="lead" type="button">First / Co-first author</button><button aria-pressed="false" class="filter-btn" data-filter="other" type="button">Co-author</button></div><span class="pub-toolbar-note">† Equal contribution where indicated in original publication</span></div>
+<div class="section-header reveal"><div><div class="eyebrow">03 / Research output</div><h2 id="publicationsTitle">Publications<span style="color:#9caed8">.</span></h2></div><p>Peer-reviewed publications across organic materials, sustainable electronics, and skin-interfaced devices. Complete author lists are shown below.</p></div>
+<div class="pub-toolbar reveal"><div aria-label="Filter publications" class="filter-buttons" role="group"><button aria-pressed="true" class="filter-btn active" data-filter="all" type="button">All publications</button><button aria-pressed="false" class="filter-btn" data-filter="lead" type="button">First / Co-first author</button><button aria-pressed="false" class="filter-btn" data-filter="other" type="button">Co-author</button></div><span class="pub-toolbar-note"><strong>Haechan Park</strong> · † Equal contribution · * Corresponding author</span></div>
 <div class="publication-wrap" id="publicationList"></div>
-<div class="pub-footer"><span aria-live="polite" id="pubCount">Showing selected publications</span><a href="https://sites.google.com/view/sims-lab/publications" rel="noopener noreferrer" target="_blank">Full lab publication list <svg height="15" width="15"><use href="#i-diag"></use></svg></a></div>
+<div class="pub-footer"><span aria-live="polite" id="pubCount">Showing 11 publications</span><a href="https://sites.google.com/view/sims-lab/publications" rel="noopener noreferrer" target="_blank">SIMS Lab publication list <svg height="15" width="15"><use href="#i-diag"></use></svg></a></div>
 </div>
 </section></main><footer><div class="container footer-inner"><span>© <span id="year">2026</span> Haechan Park · Department of Chemistry, UNIST</span><div class="footer-links"><a href="https://orcid.org/0000-0003-1129-7383" rel="noopener noreferrer" target="_blank">ORCID</a><a href="https://sites.google.com/view/sims-lab/home" rel="noopener noreferrer" target="_blank">SIMS Lab</a><a href="https://scholar.google.com/citations?user=w9Lw_o8AAAAJ&amp;hl=ko" target="_blank" rel="noopener noreferrer">Google Scholar</a></div></div></footer><script>
 (()=>{'use strict';
@@ -109,16 +118,128 @@ const pubList=$('#publicationList');
 if(pubList){
 // Edit the array below to add/remove publications. Each entry creates one paper row.
 const publications=[
-      {year:2026,title:'Recycling Organic Semiconductors: Toward Sustainable Emerging Electronics',authors:'Haechan Park†, Yerin Kim†, Minji Kim†, Jihyeon Jang†, et al.',journal:'ACS Materials Au · 6, 484–493',role:'lead',roleText:'Co-first author',url:'https://doi.org/10.1021/acsmaterialsau.5c00128'},
-      {year:2025,title:'Irreproducible SEBS wrinkling based on spin evaporation enabling identifiable artificial finger pad electronics',authors:'Juyeong Lee†, Haechan Park†, Sehyun Kim, Chang Liu, Zhengwei Li & Kyoseung Sim',journal:'Nature Communications · 16, 2225',role:'lead',roleText:'Co-first author',url:'https://doi.org/10.1038/s41467-025-57498-y'},
-      {year:2024,title:'Organic flexible electronics with closed-loop recycling for sustainable wearable technology',authors:'Haechan Park, Sehyun Kim, Juyeong Lee, Inwoo Lee, et al.',journal:'Nature Electronics · 7, 39–50',role:'lead',roleText:'First author · Cover',url:'https://doi.org/10.1038/s41928-023-01078-9'},
-      {year:2024,title:'Facile strategy for uniform gold coating on silver nanowires embedded PDMS for soft electronics',authors:'Haechan Park, Sehyun Kim, Juyeong Lee, Kwangmin Kim, et al.',journal:'npj Flexible Electronics · 8, 63',role:'lead',roleText:'First author',url:'https://doi.org/10.1038/s41528-024-00349-5'},
-      {year:2024,title:'Chemically and physically enhanced adhesion for robust interfaces in all-soft vertical organic photodetectors',authors:'Haechan Park†, Daeun Kim†, Sehyun Kim, Myeonghyeon Na, Yeeun Kim & Kyoseung Sim',journal:'Chemical Communications · 60, 9262–9265',role:'lead',roleText:'Co-first author',url:'https://doi.org/10.1039/D4CC03214D'},
-      {year:2024,title:'Soft Schottky diodes for skin-interfaced electronics enabled by entirely soft components',authors:'Donghyung Shin†, Sehyun Kim†, Haechan Park, et al.',journal:'Soft Science · 4, 22',role:'other',roleText:'Co-author',url:'https://doi.org/10.20517/ss.2024.03'},
-      {year:2023,title:'A skin-friendly soft strain sensor with direct skin adhesion enabled by using a non-toxic surfactant',authors:'Haechan Park†, Myeonghyeon Na†, Donghyung Shin†, et al.',journal:'Journal of Materials Chemistry C · 11, 9611–9619',role:'lead',roleText:'Co-first author',url:'https://doi.org/10.1039/D3TC01150J'}
-    ];
+  {
+    "year": 2026,
+    "title": "Trifunctional Disulfide-Cross-Linked Polyurethane Networks: Balancing Mechanical Robustness and Dynamic Exchange for Functional Thermoacoustic Restoration",
+    "authors": "Seongho Hong, Min Sub Kwak, Nam Jung Heo, Haechan Park, Yunhyung Choi, Hae Won Ok, Kyoseung Sim*, Jin Chul Kim*, Hyunhyub Ko*, Ja-Hyoung Ryu*",
+    "journal": "ACS Applied Polymer Materials · Published online 2026",
+    "role": "other",
+    "roleText": "Co-author",
+    "url": "https://doi.org/10.1021/acsapm.6c03911"
+  },
+  {
+    "year": 2026,
+    "title": "All-soft organic electrochemical diodes based on asymmetric active layers for signal isolation in deformable electronics",
+    "authors": "Sehyun Kim, Minji Kim, Haechan Park, Kihyun Sim, Jihyeon Jang, Yerin Kim, Jinyeong Park, Donghyung Shin, Myeonghyeon Na, Kyoseung Sim*",
+    "journal": "Science Advances · 12, eaei3178",
+    "role": "other",
+    "roleText": "Co-author",
+    "url": "https://doi.org/10.1126/sciadv.aei3178"
+  },
+  {
+    "year": 2026,
+    "title": "All-soft organic optoelectronic synapse enabling light-driven bidirectional plasticity for deformable in-hardware vector-matrix multiplication",
+    "authors": "Myeonghyeon Na, Jinyeong Park, Yerin Kim, Kihyun Sim, Donghyung Shin, Sehyun Kim, Haechan Park, Kyoseung Sim*",
+    "journal": "Device · 4, 101249",
+    "role": "other",
+    "roleText": "Co-author",
+    "url": "https://doi.org/10.1016/j.device.2026.101249"
+  },
+  {
+    "year": 2026,
+    "title": "Recycling Organic Semiconductors: Toward Sustainable Emerging Electronics",
+    "authors": "Haechan Park†, Yerin Kim†, Minji Kim†, Jihyeon Jang†, Jinyeong Park, Sehyun Kim, Myeonghyeon Na, Kyoseung Sim*",
+    "journal": "ACS Materials Au · 6, 484–493",
+    "role": "lead",
+    "roleText": "Co-first author · Cover",
+    "url": "https://doi.org/10.1021/acsmaterialsau.5c00128"
+  },
+  {
+    "year": 2025,
+    "title": "Irreproducible SEBS wrinkling based on spin evaporation enabling identifiable artificial finger pad electronics",
+    "authors": "Juyeong Lee†, Haechan Park†, Sehyun Kim, Chang Liu, Zhengwei Li, Kyoseung Sim*",
+    "journal": "Nature Communications · 16, 2225",
+    "role": "lead",
+    "roleText": "Co-first author",
+    "url": "https://doi.org/10.1038/s41467-025-57498-y"
+  },
+  {
+    "year": 2024,
+    "title": "Organic flexible electronics with closed-loop recycling for sustainable wearable technology",
+    "authors": "Haechan Park, Sehyun Kim, Juyeong Lee, Inwoo Lee, Sujitkumar Bontapalle, Younghoon Na, Kyoseung Sim*",
+    "journal": "Nature Electronics · 7, 39–50",
+    "role": "lead",
+    "roleText": "First author · Cover",
+    "url": "https://doi.org/10.1038/s41928-023-01078-9"
+  },
+  {
+    "year": 2024,
+    "title": "Facile strategy for uniform gold coating on silver nanowires embedded PDMS for soft electronics",
+    "authors": "Haechan Park, Sehyun Kim, Juyeong Lee, Kwangmin Kim, Hanah Na, Yeeun Kim, Daeun Kim, Donghyung Shin, BongSoo Kim, Kyoseung Sim*",
+    "journal": "npj Flexible Electronics · 8, 63",
+    "role": "lead",
+    "roleText": "First author",
+    "url": "https://doi.org/10.1038/s41528-024-00349-5"
+  },
+  {
+    "year": 2024,
+    "title": "Chemically and physically enhanced adhesion for robust interfaces in all-soft vertical organic photodetectors",
+    "authors": "Haechan Park†, Daeun Kim†, Sehyun Kim, Myeonghyeon Na, Yeeun Kim, Kyoseung Sim*",
+    "journal": "Chemical Communications · 60, 9262–9265",
+    "role": "lead",
+    "roleText": "Co-first author",
+    "url": "https://doi.org/10.1039/D4CC03214D"
+  },
+  {
+    "year": 2024,
+    "title": "Soft Schottky diodes for skin-interfaced electronics enabled by entirely soft components",
+    "authors": "Donghyung Shin†, Sehyun Kim†, Haechan Park, Yeeun Kim, Myeonghyeon Na, Daeun Kim, Kyoseung Sim*",
+    "journal": "Soft Science · 4, 22",
+    "role": "other",
+    "roleText": "Co-author · Cover",
+    "url": "https://doi.org/10.20517/ss.2024.03"
+  },
+  {
+    "year": 2023,
+    "title": "A skin-friendly soft strain sensor with direct skin adhesion enabled by using a non-toxic surfactant",
+    "authors": "Haechan Park†, Myeonghyeon Na†, Donghyung Shin†, Daeun Kim, Euna Kim, Sehyun Kim, Donghyun Lee, Kyoseung Sim*",
+    "journal": "Journal of Materials Chemistry C · 11, 9611–9619",
+    "role": "lead",
+    "roleText": "Co-first author",
+    "url": "https://doi.org/10.1039/D3TC01150J"
+  },
+  {
+    "year": 2022,
+    "title": "Fully soft organic electrochemical transistor enabling direct skin-mountable electrophysiological signal amplification",
+    "authors": "Sujitkumar Bontapalle, Myeonghyeon Na, Haechan Park, Kyoseung Sim*",
+    "journal": "Chemical Communications · 58, 1298–1301",
+    "role": "other",
+    "roleText": "Co-author · Cover",
+    "url": "https://doi.org/10.1039/D1CC04884H"
+  }
+];
 const safe=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function renderPubs(filter='all'){const items=publications.filter(p=>filter==='all'||p.role===filter);pubList.innerHTML=items.map(p=>`<article class="publication"><span class="pub-year">${p.year}</span><div><h3 class="pub-title">${safe(p.title)}</h3><p class="pub-authors">${safe(p.authors)}</p><div class="pub-detail"><span class="pub-journal">${safe(p.journal)}</span><span class="pub-role">${safe(p.roleText)}</span></div></div><a class="paper-link" href="${p.url}" target="_blank" rel="noopener noreferrer" aria-label="Open paper: ${safe(p.title)}">View paper <svg><use href="#i-diag"/></svg></a></article>`).join('');$('#pubCount').textContent=`Showing ${items.length} of ${publications.length} selected publications`;}
+function formatAuthors(raw){
+  // Render every author and preserve publisher-verified symbols.
+  return raw.split(', ').map(entry=>{
+    const marker=entry.endsWith('†')?'†':entry.endsWith('*')?'*':'';
+    const name=marker?entry.slice(0,-1):entry;
+    const display=name==='Haechan Park'?`<strong class="author-self">${safe(name)}</strong>`:safe(name);
+    const superscript=marker?`<sup class="author-symbol" aria-label="${marker==='*'?'Corresponding author':'Equal contribution'}">${marker}</sup>`:'';
+    return display+superscript;
+  }).join(', ');
+}
+function renderPubs(filter='all'){
+  const items=publications.filter(p=>filter==='all'||p.role===filter);
+  pubList.innerHTML=items.map(p=>`<article class="publication">
+    <span class="pub-year">${p.year}</span><div>
+      <h3 class="pub-title">${safe(p.title)}</h3>
+      <p class="pub-authors">${formatAuthors(p.authors)}</p>
+      <div class="pub-detail"><span class="pub-journal">${safe(p.journal)}</span><span class="pub-role">${safe(p.roleText)}</span></div>
+    </div><a class="paper-link" href="${p.url}" target="_blank" rel="noopener noreferrer" aria-label="Open paper: ${safe(p.title)}">View paper <svg aria-hidden="true"><use href="#i-diag"/></svg></a>
+  </article>`).join('');
+  $('#pubCount').textContent=`Showing ${items.length} of ${publications.length} publications`;
+}
 renderPubs();$$('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{$$('.filter-btn').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});btn.classList.add('active');btn.setAttribute('aria-pressed','true');renderPubs(btn.dataset.filter)}));}
 const gallery=$('#galleryTrack');
 if(gallery){const cards=$$('.gallery-card',gallery);const step=()=>cards[0].getBoundingClientRect().width+parseFloat(getComputedStyle(gallery).gap||'20');function visibleCount(){return Math.max(1,Math.round(gallery.clientWidth/step()))}function updateGallery(){const max=Math.max(1,cards.length-visibleCount());const index=Math.min(max,Math.max(0,Math.round(gallery.scrollLeft/step())));$('#galleryCount').textContent=`${String(index+1).padStart(2,'0')} / ${String(cards.length).padStart(2,'0')}`;$('#galleryProgressLine').style.width=`${100*visibleCount()/cards.length}%`;$('#galleryProgressLine').style.transform=`translateX(${index*100/visibleCount()}%)`}

@@ -1,29 +1,16 @@
-# Haechan Park — Academic Website
+# Haechan Park — Publications update (Nov 18, 2026)
 
-Personal research website built with HTML, CSS, and JavaScript. Ready for GitHub Pages.
+## What changed
+- `publications.html`: 11 verified journal publications (2022–2026) featuring Haechan Park.
+- Complete author lists: no `et al.`; bold Haechan Park, † equal contribution, * corresponding authors.
+- Three publication filters and live item counts retained.
+- `index.html`: home still only shows the 2-paper carousel, but the Publications CTA mentions the complete list.
+- Other pages remain unchanged.
 
-**Theme:** RGB(61, 80, 130) (`#3D5082`)  
-**Pages:** Home (research carousel), Haechan Park, Research Interests, Publications, Gallery.
+## Upload to GitHub Pages
+Extract this zip, open your existing GitHub repository, and use Add file > Upload files to upload and replace the five HTML files in the repository ROOT (not a nested folder). Commit the change. If you prefer, only `index.html` and `publications.html` need replacing. Wait until Actions > pages build and deployment succeeds; hard-refresh the browser.
 
-### Publish on GitHub Pages
+## Sources and notes
+Google Scholar profile (user=w9Lw_o8AAAAJ) was inaccessible to automated retrieval during update. Author names and corresponding-author marks were cross-checked against the official SIMS Lab publications page (https://sites.google.com/view/sims-lab/publications), publisher pages (Nature, RSC, ACS, AAAS, Elsevier), and public indexing for the newly published Nov 2026 ACS Applied Polymer Materials article. The 2026 ACS Applied Polymer Materials paper is included based on the publisher record even if Google Scholar has not indexed it yet. The site does not fetch Google Scholar dynamically.
 
-Follow the Korean step-by-step guide in [GITHUB_PAGES_GUIDE_KO.md](GITHUB_PAGES_GUIDE_KO.md).
-
-In short, upload all files and the `assets/` folder to the root of a public GitHub repository, then open **Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save**. Changes committed to `main` redeploy automatically.
-
-### Editing locations
-
-| Want to change | File |
-| --- | --- |
-| Home carousel headings, images and descriptions | `index.html` |
-| Personal biography and contact | `haechan-park.html` |
-| Research descriptions and figures | `research-interests.html` |
-| Publication data | `assets/site.js` (`const publications`) |
-| Gallery figures and titles | `gallery.html` |
-| Theme color, typography and layout | `assets/site.css` (`--accent: #3d5082`) |
-| Carousel, menu and gallery interactions | `assets/site.js` |
-| Image illustrations / images | `assets/` |
-
-All navigation links and assets are **relative**, so they work on both username-root and project GitHub Pages URLs. Image artwork is conceptual; replace with actual research figures before public release. Please verify biographical, bibliographic and external link details before publishing.
-
-No build command, npm installation, or server is required for deployment.
+To edit future publications: edit the `const publications` JavaScript array near the bottom of `publications.html`. Use a comma-separated full author list; append * to corresponding authors and † to equally contributing first authors. The page will format markers automatically.
