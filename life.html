@@ -77,26 +77,16 @@ a:focus-visible,button:focus-visible{outline:3px solid #8aabef;outline-offset:3p
 @media(max-width:490px){.home-page .hero{padding-top:44px}.home-page .hero-grid{gap:34px}.page-main .section-header h2{font-size:37px}.page-main .research-img{aspect-ratio:1.65}.page-main .gallery-image{aspect-ratio:1.04}}
 
 
-/* Life page — editable standalone page */
-.life-page{background:radial-gradient(circle at 8% 0%,#e7edfa 0%,#f7f9fd 40%,#f7f9fd 100%)}
-.life-section{padding:clamp(62px,8vw,112px) 0 clamp(85px,10vw,140px)}
-.life-heading{margin-bottom:38px}
-.life-heading h1{font-family:Manrope,sans-serif;font-size:clamp(66px,9vw,126px);line-height:1;letter-spacing:-.09em;margin:23px 0 17px;font-weight:800;color:#203255}
-.life-title-period{color:#3d5082}
-.life-heading p{color:#667892;font-size:15px;letter-spacing:.005em;margin:0}
-.life-placeholder{position:relative;min-height:clamp(360px,39vw,530px);overflow:hidden;display:grid;place-items:center;border-radius:24px;border:1px solid #dce4f1;background:linear-gradient(125deg,#e9effa 0%,#f5f8fd 52%,#e2eafb 100%);box-shadow:0 24px 60px rgba(32,51,90,.075)}
-.life-placeholder::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(61,80,130,.042) 1px,transparent 1px),linear-gradient(90deg,rgba(61,80,130,.042) 1px,transparent 1px);background-size:38px 38px;mask-image:linear-gradient(120deg,transparent,#000 56%,transparent)}
-.life-art{position:absolute;border:1px solid rgba(61,80,130,.18);width:50%;aspect-ratio:1;border-radius:50%;pointer-events:none}
-.life-art-one{top:-65%;right:-12%}.life-art-two{width:35%;bottom:-54%;left:-11%}
-.life-inner{position:relative;text-align:center;padding:35px 20px}
-.life-caption{font-size:10px;letter-spacing:.24em;color:#7284a7;font-weight:800}
-.life-dash{display:block;width:35px;height:2px;background:#3d5082;margin:21px auto 25px}
-.life-inner h2{font-family:Manrope,sans-serif;font-size:clamp(36px,5vw,66px);letter-spacing:-.065em;margin:0;color:#273e68;font-weight:800}
-.life-inner h2 span{color:#8196c2}
-.life-inner p{font-size:14px;color:#72809c;margin:14px 0 0}
-.life-corner{position:absolute;bottom:24px;right:29px;font-size:10px;letter-spacing:.15em;color:#8293b1;font-weight:700}
-@media(max-width:760px){.life-section{padding:68px 0 95px}.life-placeholder{min-height:400px;border-radius:17px}.life-heading h1{font-size:78px}}
-@media(max-width:490px){.life-placeholder{min-height:350px}.life-inner h2{font-size:38px}.life-inner p{font-size:12px}}
+/* Life page — consistent with Research Interests and Publications */
+.life-page{background:var(--cream)}
+.page-main .life-section{padding-top:clamp(72px,8.5vw,120px);padding-bottom:clamp(88px,9vw,130px)}
+.life-placeholder{position:relative;min-height:360px;display:grid;place-items:center;overflow:hidden;border-radius:17px;border:1px solid #dee2e8;background:#fff;box-shadow:0 12px 36px rgba(36,55,100,.055)}
+.life-inner{position:relative;text-align:center;padding:34px 22px}
+.life-dash{display:block;width:36px;height:2px;background:#3d5082;margin:0 auto 22px}
+.life-inner h3{font-family:Manrope,sans-serif;font-size:clamp(27px,3vw,38px);letter-spacing:-.055em;line-height:1.2;margin:0;color:#1d2b46;font-weight:700}
+.life-inner p{font-size:13px;line-height:1.8;color:#657898;margin:13px 0 0}
+@media(max-width:760px){.page-main .life-section{padding-top:74px;padding-bottom:86px}.life-placeholder{min-height:300px}}
+@media(max-width:490px){.life-placeholder{min-height:280px}.life-inner h3{font-size:29px}}
 
 </style></head><body class="inner-page"><svg aria-hidden="true" class="screen-reader" xmlns="http://www.w3.org/2000/svg"><symbol id="i-arrow" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-diag" viewbox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-left" viewbox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></symbol><symbol id="i-right" viewbox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></symbol><symbol id="i-expand" viewbox="0 0 24 24"><path d="M8 4H4v4M16 4h4v4M4 16v4h4m12-4v4h-4" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-close" viewbox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></symbol></svg><header class="site-header">
 <div class="container header-inner">
@@ -107,23 +97,20 @@ a:focus-visible,button:focus-visible{outline:3px solid #8aabef;outline-offset:3p
 </div>
 <nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav"><a href="index.html">Home</a><a href="haechan-park.html">Haechan Park</a><a href="research-interests.html">Research Interests</a><a href="publications.html">Publications</a><a aria-current="page" href="life.html">Life</a><a href="mailto:phc0304@unist.ac.kr">Contact</a></nav>
 </header><main class="page-main life-page" id="main-content">
-<section class="life-section" aria-labelledby="life-title">
+<section class="section life-section" aria-labelledby="life-title">
 <div class="container">
-  <div class="life-heading reveal">
-    <div class="page-kicker">Beyond the lab</div>
-    <h1 id="life-title">Life<span class="life-title-period">.</span></h1>
-    <p>Little moments outside the research lab.</p>
+  <div class="section-header reveal">
+    <div>
+      <div class="eyebrow">04 / Life</div>
+      <h2 id="life-title">Life</h2>
+    </div>
   </div>
   <div class="life-placeholder reveal" aria-label="Life content coming later">
-    <div class="life-art life-art-one" aria-hidden="true"></div>
-    <div class="life-art life-art-two" aria-hidden="true"></div>
     <div class="life-inner">
-      <span class="life-caption">A COLLECTION IN PROGRESS</span>
       <span class="life-dash" aria-hidden="true"></span>
-      <h2>To be updated<span>.</span></h2>
+      <h3>To be updated.</h3>
       <p>New moments and stories will appear here.</p>
     </div>
-    <span class="life-corner" aria-hidden="true">01 / ∞</span>
   </div>
 </div>
 </section>
