@@ -56,7 +56,7 @@ html{scroll-padding-top:78px}
 .page-main .section-header{margin-bottom:43px}
 .page-main .section-header h2{font-size:clamp(40px,4vw,62px)}
 .page-main .section-header p{max-width:425px;font-size:14px}
-.page-main .section.{background:linear-gradient(180deg,#f0f4fc 0%,#f7f9fd 100%)}
+.page-main .section.soft-section{background:linear-gradient(180deg,#f0f4fc 0%,#f7f9fd 100%)}
 .page-main .gallery-section{background:#f0f4fa}
 .page-main .about-grid{align-items:start}
 .page-main .portrait-panel{min-height:465px}
@@ -100,6 +100,16 @@ a:focus-visible,button:focus-visible{outline:3px solid #8aabef;outline-offset:3p
 .portrait-panel.photo-pending{display:flex;align-items:center;justify-content:center;background:#e8edf6;border:1px solid #d9e1ef;text-align:center;}
 .portrait-panel.photo-pending::before{content:none;}
 .photo-pending-text{position:relative;z-index:2;margin:0;color:#647697;font-family:Manrope,sans-serif;font-size:clamp(19px,2vw,25px);font-weight:650;letter-spacing:-.035em;}
+
+/* Align the About background and photo placeholder with Life page */
+.page-main #about{background:var(--cream)}
+.profile-photo-placeholder{position:relative;min-height:410px;display:grid;place-items:center;overflow:hidden;border-radius:17px;border:1px solid #dee2e8;background:#fff;box-shadow:0 12px 36px rgba(36,55,100,.055)}
+.profile-placeholder-inner{position:relative;text-align:center;padding:34px 22px}
+.profile-placeholder-dash{display:block;width:36px;height:2px;background:#3d5082;margin:0 auto 22px}
+.profile-placeholder-inner h3{font-family:Manrope,sans-serif;font-size:clamp(27px,3vw,38px);letter-spacing:-.055em;line-height:1.2;margin:0;color:#1d2b46;font-weight:700}
+.profile-placeholder-inner p{font-size:13px;line-height:1.8;color:#657898;margin:13px 0 0}
+@media(max-width:760px){.profile-photo-placeholder{min-height:310px}}
+@media(max-width:490px){.profile-photo-placeholder{min-height:280px}.profile-placeholder-inner h3{font-size:29px}}
 </style></head><body class="inner-page"><svg aria-hidden="true" class="screen-reader" xmlns="http://www.w3.org/2000/svg"><symbol id="i-arrow" viewbox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-diag" viewbox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-left" viewbox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></symbol><symbol id="i-right" viewbox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"></path></symbol><symbol id="i-expand" viewbox="0 0 24 24"><path d="M8 4H4v4M16 4h4v4M4 16v4h4m12-4v4h-4" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></symbol><symbol id="i-close" viewbox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></symbol></svg><header class="site-header">
 <div class="container header-inner">
 <a aria-label="Haechan Park homepage" class="brand" href="index.html"><span><span class="brand-text">HAECHAN PARK</span><span class="brand-small">Ph.D. · Soft Electronics Researcher</span></span></a>
@@ -108,11 +118,17 @@ a:focus-visible,button:focus-visible{outline:3px solid #8aabef;outline-offset:3p
 <button aria-controls="mobileNav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle" type="button"><svg fill="none" height="22" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="22"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
 </div>
 <nav aria-label="Mobile navigation" class="mobile-nav" hidden="" id="mobileNav"><a href="index.html">Home</a><a aria-current="page" href="haechan-park.html">Haechan Park</a><a href="research-interests.html">Research Interests</a><a href="publications.html">Publications</a><a href="life.html">Life</a><a href="mailto:phc0304@unist.ac.kr">Contact</a></nav>
-</header><main class="page-main" id="main-content"><section aria-labelledby="aboutTitle" class="section soft-section" id="about">
+</header><main class="page-main" id="main-content"><section aria-labelledby="aboutTitle" class="section" id="about">
 <div class="container">
 <div class="section-header reveal"><div><div class="eyebrow">01 / About</div><h2 id="aboutTitle">Haechan Park</h2></div></div>
 <div class="about-grid">
-<div class="about-visual-column"><div aria-label="Profile photograph to be updated" class="portrait-panel photo-pending reveal"><p class="photo-pending-text">To be updated.</p></div><div aria-label="Researcher profiles" class="profile-links"><a class="profile-link" href="https://scholar.google.com/citations?user=w9Lw_o8AAAAJ&amp;hl=ko" rel="noopener noreferrer" target="_blank"><span class="profile-link-text"><strong>Google Scholar</strong><small>Publications &amp; citations</small></span><span aria-hidden="true" class="profile-link-arrow">↗</span></a><a class="profile-link" href="https://orcid.org/0000-0003-1129-7383" rel="noopener noreferrer" target="_blank"><span class="profile-link-text"><strong>ORCID</strong><small>Researcher identifier</small></span><span aria-hidden="true" class="profile-link-arrow">↗</span></a></div></div>
+<div class="about-visual-column"><div aria-label="Profile photograph to be updated" class="profile-photo-placeholder reveal">
+  <div class="profile-placeholder-inner">
+    <span class="profile-placeholder-dash" aria-hidden="true"></span>
+    <h3>To be updated.</h3>
+    <p>Profile photograph will appear here.</p>
+  </div>
+</div><div aria-label="Researcher profiles" class="profile-links"><a class="profile-link" href="https://scholar.google.com/citations?user=w9Lw_o8AAAAJ&amp;hl=ko" rel="noopener noreferrer" target="_blank"><span class="profile-link-text"><strong>Google Scholar</strong><small>Publications &amp; citations</small></span><span aria-hidden="true" class="profile-link-arrow">↗</span></a><a class="profile-link" href="https://orcid.org/0000-0003-1129-7383" rel="noopener noreferrer" target="_blank"><span class="profile-link-text"><strong>ORCID</strong><small>Researcher identifier</small></span><span aria-hidden="true" class="profile-link-arrow">↗</span></a></div></div>
 <div class="about-copy reveal"><div class="eyebrow">Research profile</div><h3>Exploring materials chemistry to advance soft electronic devices and their real-world applications.</h3><p>I am a postdoctoral researcher in the Department of Chemistry at UNIST, working in Prof. Kyoseung Sim's research group. My research focuses on the chemistry and design of soft electronic materials, intrinsically soft devices, and functional systems for wearable and skin-interfaced applications.</p><div class="facts-grid"><div class="fact"><b>Current position</b><span>Postdoctoral Researcher<br/>UNIST, South Korea</span></div><div class="fact"><b>Education</b><span>Ph.D. in Chemistry<br/>UNIST · 2025<br/>B.S. in Chemistry<br/>Konkuk University · 2021<br/>Graduated top of class</span></div><div class="fact"><b>Research focus</b><span>Soft electronics<br/>Recyclable electronics</span></div><div class="fact"><b>Contact</b><span><a href="mailto:phc0304@unist.ac.kr">phc0304@unist.ac.kr</a><br/><a href="mailto:phc9840@gmail.com">phc9840@gmail.com</a><br/><a href="https://orcid.org/0000-0003-1129-7383" rel="noopener noreferrer" target="_blank">ORCID ↗</a></span></div></div></div>
 </div>
 </div>
